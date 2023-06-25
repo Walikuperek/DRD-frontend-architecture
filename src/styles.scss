@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: dark;
+  font-size: 32px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    margin: 0.25rem 0;
+  }
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.font-mono {
+  font-family: "Fira Code", monospace;
+}
+
+.text-muted {
+  color: #999;
+}
+
+.border-muted-dotted {
+  border-color: #999;
+  border-style: dotted;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.form-group {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 24px;
+}
