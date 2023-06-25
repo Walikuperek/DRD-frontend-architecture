@@ -2,6 +2,16 @@
 
 [LIVE DEMO](https://quak.com.pl/drd-architecture/angular-example)
 
+## Project - DRD
+
+QUAK: *"DRD stands for DTO, Repository, Domain. It is a frontend software architecture that separates the business logic from the presentation layer - so called use cases. It is a layered architecture that is based on the principles of Domain Driven Design (DDD)."*
+
+This is an example of Angular application using the DRD Architecture. It's is fully working and can be used as a starting point for your own project.
+
+### Architecture graph
+
+#### Core - DRD
+
 ```mermaid
 flowchart TD
     C{DRD}
@@ -12,6 +22,16 @@ flowchart TD
     F --> G(Model)
     F --> H(Store)
 ```
+
+```
+/src/app/features - Features - business layer engine
+    /users
+        /dto - Data Transfer Object - translations layer
+        /repo - Repository - data access layer
+        /domain - Domain - business logic layer
+```
+
+#### Use Case - Views
 
 ```mermaid
 flowchart TD
@@ -25,9 +45,15 @@ flowchart TD
     C --> D
 ```
 
-QUAK: *"DRD stands for DTO, Repository, Domain. It is a frontend software architecture that separates the business logic from the presentation layer - so called use cases. It is a layered architecture that is based on the principles of Domain Driven Design (DDD)."*
+```
+/src/app/views - Views - presentation layer / use cases
+    /home
+    /users
+        /user-search
+        /user-profile
+```
 
-This is an example of Angular application using the DRD Architecture. It's is fully working and can be used as a starting point for your own project.
+### Dependencies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
@@ -38,24 +64,6 @@ Installed only the following packages:
 DEV dependency:
 
 - "prettier": "2.8.8" - for code formatting
-
-## Architecture
-
-```
-/src/app/features - Features - business layer engine
-    /users
-        /dto - Data Transfer Object - translations layer
-        /repo - Repository - data access layer
-        /domain - Domain - business logic layer
-```
-
-```
-/src/app/views - Views - presentation layer / use cases
-    /home
-    /users
-        /user-search
-        /user-profile
-```
 
 ## Development server
 
