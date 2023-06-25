@@ -2,6 +2,29 @@
 
 [LIVE DEMO](https://quak.com.pl/drd-architecture/angular-example)
 
+```mermaid
+flowchart TD
+    C{DRD}
+    C -->|Data Transfer Object| D(DTO)
+    C --> E(Repository)
+    C --> F(Domain)
+
+    F --> G(Model)
+    F --> H(Store)
+```
+
+```mermaid
+flowchart TD
+    A(DTO)
+    B(Repository)
+    C(Domain)
+    D(UseCase)
+
+    A --> D
+    B --> D
+    C --> D
+```
+
 QUAK: *"DRD stands for DTO, Repository, Domain. It is a frontend software architecture that separates the business logic from the presentation layer - so called use cases. It is a layered architecture that is based on the principles of Domain Driven Design (DDD)."*
 
 This is an example of Angular application using the DRD Architecture. It's is fully working and can be used as a starting point for your own project.
