@@ -8,7 +8,6 @@ export class UserProfileDTO {
   }
 
   static fromUpdateUserResponse(from: UpdateUserResponse): UserProfileDTO {
-    console.log('UserProfileDTO.fromUpdateUserResponse', from);
     return new UserProfileDTO({
       id: from.id,
       user_name: from.user_name,
