@@ -18,17 +18,6 @@ flowchart TD
     C -->|Data Transfer Object| D(DTO)
     C --> E(Repository)
     C --> F(Domain)
-
-    F --> G(Model)
-    F --> H(Store)
-```
-
-```
-/src/app/features - Features - business layer engine
-    /users
-        /dto - Data Transfer Object - translations layer
-        /repo - Repository - data access layer
-        /domain - Domain - business logic layer
 ```
 
 #### Use Case - Views
@@ -43,14 +32,6 @@ flowchart TD
     A --> D
     B --> D
     C --> D
-```
-
-```
-/src/app/views - Views - presentation layer / use cases
-    /home
-    /users
-        /user-search
-        /user-profile
 ```
 
 ### Dependencies
