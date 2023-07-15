@@ -10,28 +10,17 @@ This is an example of Angular application using the DRD Architecture. It's is fu
 
 ### Architecture graph
 
-#### Core - DRD
-
 ```mermaid
 flowchart TD
     C{DRD}
     C -->|Data Transfer Object| D(DTO)
     C --> E(Repository)
     C --> F(Domain)
-```
 
-#### Use Case - Views
-
-```mermaid
-flowchart TD
-    A(DTO)
-    B(Repository)
-    C(Domain)
-    D(UseCase)
-
-    A --> D
-    B --> D
-    C --> D
+    G(Use Case)
+    D --> G
+    E --> G
+    F --> G
 ```
 
 ### Dependencies
